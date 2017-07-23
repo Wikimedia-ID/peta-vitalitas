@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peta Vitalitas 0.0.1</title>
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+  <div id="map" class="map">
+  </div>
+  <div class="control-menu">
+    <a class="button" id="c-button-menu">Menu</a>
+  </div>
+  <div class="control-panel" id="c-panel-menu">
+    <div class="tabs is-small">
+      <ul>
+        <li class="is-active"><a>Queries</a></li>
+        <li><a id="c-button-menu-close">close</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-16x16">
+              <i class="fa fa-file-text"></i>
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-6"><a c-query-filepath="sparqls/languages-in-indonesia.sparql.txt">languages-in-indonesia.sparql.txt</a></p>
+          </div>
+        </div>
+      
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-16x16">
+              <i class="fa fa-file-text"></i>
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-6"><a c-query-filepath="sparqls/universities-in-flores.sparql.txt">universities-in-flores.sparql.txt</a></p>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+  <div class="notif-holder" id="c-notif-holder"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
